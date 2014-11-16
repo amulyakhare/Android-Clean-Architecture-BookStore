@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <LinearLayout android:orientation="vertical"
+                  android:paddingBottom="10dp"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/book_icon"
+                android:layout_width="60dp"
+                android:layout_height="90dp"
+                android:src="@drawable/book1"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:id="@+id/book_title"
+                android:paddingLeft="10dp"
+                android:layout_toRightOf="@+id/book_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/book_author"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:layout_toRightOf="@+id/book_icon"
+                android:layout_below="@id/book_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textSize="12sp"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/book_detail"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingMultiplier="1.2"/>
+
+        <Button
+            android:id="@+id/download_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:text="Download"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"/>
+
+        <ProgressBar android:id="@+id/status_progress"
+                     android:visibility="gone"
+                     android:layout_width="fill_parent" android:layout_height="5dp"
+                     android:layout_marginTop="10dp"
+                     android:layout_marginLeft="20dp"
+                     android:layout_marginRight="20dp"
+                     style="@android:style/Widget.ProgressBar.Horizontal"
+                     android:indeterminate="false" android:indeterminateOnly="false" />
+
+    </LinearLayout>
+</ScrollView>
