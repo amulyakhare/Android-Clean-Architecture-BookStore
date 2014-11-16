@@ -47,5 +47,6 @@ public class BookStoreBaseActivity extends ActionBarActivity {
         for (IPresenter presenter : presenterList) {
             presenter.onDestroy();
         }
+        presenterList.clear();
     }
 }

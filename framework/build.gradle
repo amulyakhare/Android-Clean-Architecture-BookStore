@@ -1,6 +1,5 @@
 apply plugin: 'com.android.library'
 apply plugin: 'android-apt'
-apply plugin: 'robolectric'
 
 android {
     compileSdkVersion 21

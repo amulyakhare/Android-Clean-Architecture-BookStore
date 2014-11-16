@@ -1,6 +1,5 @@
 apply plugin: 'com.android.library'
 apply plugin: 'android-apt'
-apply plugin: 'robolectric'
 
 android {
     compileSdkVersion 21
@@ -12,6 +11,7 @@ android {
         targetSdkVersion 21
         versionCode 1
         versionName "1.0"
+        testPackageName 'com.amulyakhare.domain.test'
     }
     buildTypes {
         release {

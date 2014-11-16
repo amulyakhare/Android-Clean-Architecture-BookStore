@@ -26,6 +26,7 @@ android {
         targetSdkVersion 21
         versionCode 1
         versionName "1.0"
+        testPackageName 'com.amulyakhare.bookstore.test'
     }
     buildTypes {
         release {
@@ -60,7 +61,7 @@ dependencies {
         exclude module: 'hamcrest-core'
     }
     androidTestCompile('org.mockito:mockito-all:1.9.0')
-    androidTestCompile('org.robolectric:robolectric:2.3') {
+    androidTestCompile('org.robolectric:robolectric:2.4') {
         exclude module: 'classworlds'
         exclude module: 'commons-logging'
         exclude module: 'httpclient'
